@@ -36,3 +36,309 @@
     transform: rotate(360deg);
   }
 }
+
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  background-color: white;
+  width: 100%;
+  margin: 0;
+  padding-left: 10px;
+}
+
+.header h1{
+  font-size: 1.5rem;
+}
+
+.pages_links{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.link{
+  margin-right: 10px;
+}
+
+.about_header{
+  justify-items: center;
+  display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 10px;
+}
+
+.about_header h2{
+  font-size: 2.5rem;
+}
+
+.about_header p{
+  max-width: 400px;
+  justify-content: start;
+  font-size: 1.5rem;
+}
+
+.about_sections{
+  justify-items: center;
+  display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   margin: 10px;
+   margin-top: 30px;
+}
+
+.about_section2{
+  margin-right: auto;
+}
+
+.about_img1,
+.about_img3{
+  width: 40vw;
+  height: 90vh;
+}
+
+.about_img3{
+  margin-top: 60px;
+}
+.about_img2{
+  width: 50vw;
+  height: 70vh;
+  margin-left: 10px;
+}
+
+.about_section3{
+  font-size: 1.25rem;
+  max-width: 80vw;
+  margin-top: 50px;
+  justify-content: center;
+  margin: auto;
+}
+
+.about_section3 p{
+  text-align: left;
+}
+
+.welcome_message{
+  background-color:black;
+  color: white;
+  width: 100%;
+  height: 400px;
+  padding: 10px; /* Optional padding for the container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome_message p{
+  margin: 0; /* Remove default margin */
+  width: 70%; /* Make paragraph occupy full width */
+  text-align: center; /* Justify the text */
+  display: flex; /* Flex allows it to take full height */
+  align-items: center; 
+  height: 100%;
+  font-size: 2rem;
+  justify-items: center;
+}
+/* max-w-[1400px] h-[500px] w-[500px] m-auto py-16 px-4 relative */
+.cmcBanner{
+  height: 400px;
+}
+
+
+.carousel_container{
+  max-width: 1400px;
+  width: 80vw;
+  height: 80vh;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+
+}
+
+.carousel_test{
+  max-height: 1400px;
+  height: 100%;
+  width: 100%;
+}
+
+/* w-full h-full bg-center bg-cover duration-500 */
+.carousel_background{
+  width: 100%;
+  height: 100%;
+  background: center;
+  background: cover;
+  animation-duration: 1000;
+}
+
+.giving_prompt-container{
+  background-color: #d8613c;
+  height:100%;
+  width: 100%;
+  display: blo;
+  justify-content: center;
+  margin: auto;
+}
+
+.giving_prompt{
+  font-size: 2rem;
+}
+
+.dropdown {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.dropdown-header {
+  padding: 10px;
+  background:transparent;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  padding: 10px;
+  background:transparent;
+}
+
+
+.gallery_container{
+  justify-content: center;
+}
+
+.gallery_imgs{
+ justify-items: center;
+ display: grid;
+  grid-template-columns: repeat(2, 0.65fr);
+  gap: 10px;
+}
+
+.gallery_container img {
+  max-width: 1000px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gallery_heading{
+  display: flex;
+  height: auto;
+  width: 100%;
+  background-color: #61dafb;
+}
+
+.gallery_text{
+  height: 80%;
+  width: 100%;
+  font-size: 2.2rem;
+  justify-content: center;
+}
+
+/* .gallery_container{
+  width: 100%;
+  height: auto;
+  display: block; 
+} */
+
+.gallery_imgs .span-2 {
+  grid-column:span 2;
+  width: 2fr;
+  height: auto;
+}
+
+
+/* carousel test */
+.services_img{
+  width: 70px;
+  height: 70px;
+}
+
+
+.carouselTest_Container{
+  /* max-width: 1400px; */
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  /* margin: auto; */
+  margin-bottom: 0%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  /* background-color: greenyellow; */
+
+}
+
+.carousel_background {
+  width: 75vw;
+  height: 90vh; /* Makes the container full viewport height */
+  background-size: cover; /* Scales the image to cover the entire area */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Ensures the image doesn’t repeat */
+}
+
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+.left-arrow {
+  left: 1.25rem; /* Adjust as needed */
+}
+
+.right-arrow {
+  right: 1.25rem; /* Adjust as needed */
+}
+
+.carousel_dots {
+  display: flex;
+  justify-content: center;
+   /* Corresponds to "py-2" */
+  padding-bottom: 0.5rem; /* Corresponds to "py-2" */
+   /* Corresponds to "top-4" */
+  position: absolute;
+  left: 50%;
+  bottom: 0rem;
+}
+
+.dots{
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+.footer_container{
+  height: 400px;
+  width: 100vw;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 10px;
+}
+
+.footer_home-link{
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: black;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #333;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #0073e6; /* Change color on hover */
+}
